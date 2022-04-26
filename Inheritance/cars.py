@@ -5,17 +5,17 @@ class Car:
         self.yom = yom
         self.mileage = 0
 
-    def describe_car(self):
+    def describeCar(self):
         print("Car Description:")
         print(f"Manufacturer: {self.manufacturer}")
         print(f"Model: {self.model}")
         print(f"Year of Manufacture: {self.yom}")
         print(f"Mileage: {self.mileage}")    
 
-    def update_mileage(self, miles):
+    def updateMileage(self, miles):
         self.mileage += miles    
 
-    def check_mileage(self):
+    def checkMileage(self):
         return self.mileage
 
 class ElectricCar(Car):
@@ -26,15 +26,15 @@ class ElectricCar(Car):
     def recharge(self):
         print(f"{self.manufacturer} {self.model} is recharging...")
 
-    def describe_car(self):
+    def describeCar(self):
         print("Electric Vehicle")
-        super().describe_car()
+        super().describeCar()
         print(f"Battery Rating: {self.battery_rating}")
 
-    def set_battery(self, rating):
+    def setBattery(self, rating):
         self.battery_rating = rating
 
-    def get_battery_rating(self):
+    def getBatteryRating(self):
         return self.battery_rating
 
 
